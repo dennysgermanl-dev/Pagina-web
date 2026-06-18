@@ -1,90 +1,399 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi pagina personal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <script defer src="supabase-config.js"></script>
-    <script defer src="app.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Inicio">
-        <span class="brand-mark"></span>
-        <span>Mi perfil</span>
-      </a>
-      <nav class="nav-links" aria-label="Navegacion principal">
-        <a href="#sobre-mi">Sobre mi</a>
-        <a href="#fotografia">Fotografia</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-media" aria-hidden="true">
-          <div class="phone-frame">
-            <div class="lens"></div>
-            <div class="photo-preview">
-              <div class="preview-sky"></div>
-              <div class="preview-sun"></div>
-              <div class="preview-line one"></div>
-              <div class="preview-line two"></div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-content">
-          <p class="eyebrow">Pagina personal</p>
-          <h1 id="profile-name">Mi perfil personal</h1>
-          <p class="hero-copy" id="profile-headline">Tecnologia, analisis y fotografia desde celular</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#fotografia">Ver fotografias</a>
-            <a class="button ghost" href="#sobre-mi">Conocerme</a>
-          </div>
-        </div>
-      </section>
+<head>
 
-      <section class="intro-section" id="sobre-mi">
-        <div class="section-heading">
-          <p class="eyebrow">Sobre mi</p>
-          <h2>Una mezcla de aprendizaje, tecnologia y mirada creativa.</h2>
-        </div>
-        <div class="about-layout">
-          <div class="portrait-panel">
-            <img id="profile-avatar" alt="Foto personal" />
-            <div class="avatar-fallback" id="avatar-fallback">Tu foto aqui</div>
-          </div>
-          <div class="about-text">
-            <p id="profile-about"></p>
-            <p id="profile-focus"></p>
-            <div class="location-pill" id="profile-location"></div>
-          </div>
-        </div>
-      </section>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <section class="full-band">
-        <div class="section-heading">
-          <p class="eyebrow">Intereses</p>
-          <h2>Lo que quiero seguir desarrollando.</h2>
-        </div>
-        <div class="highlight-grid" id="highlight-grid"></div>
-      </section>
+<title>Portfolio Profesional</title>
 
-      <section class="gallery-section" id="fotografia">
-        <div class="section-heading">
-          <p class="eyebrow">Fotografia</p>
-          <h2>Fotos hechas con celular, momentos guardados con intencion.</h2>
-        </div>
-        <div class="gallery-grid" id="gallery-grid"></div>
-      </section>
-    </main>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <footer class="footer">
-      <p>Creado para mostrar mi crecimiento, mis gustos y mi forma de mirar el mundo.</p>
-    </footer>
-  </body>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+<script defer src="supabase-config.js"></script>
+<script defer src="app.js"></script>
+
+</head>
+
+<body>
+
+<!-- CURSOR GLOW -->
+
+<div class="cursor-glow"></div>
+
+<!-- NAVBAR -->
+
+<header class="site-header">
+
+<nav class="navbar">
+
+<a href="#" class="logo">
+<span class="logo-dot"></span>
+<span id="logo-name">Portfolio</span>
+</a>
+
+<div class="nav-links">
+
+<a href="#about">Sobre mí</a>
+
+<a href="#skills">Especialidades</a>
+
+<a href="#experience">Experiencia</a>
+
+<a href="#projects">Proyectos</a>
+
+<a href="#gallery">Galería</a>
+
+<a href="#socials">Contacto</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-background">
+
+<div class="gradient-orb orb-1"></div>
+<div class="gradient-orb orb-2"></div>
+<div class="gradient-orb orb-3"></div>
+
+</div>
+
+<div class="hero-content">
+
+<p class="hero-label">
+PORTAFOLIO PROFESIONAL
+</p>
+
+<h1 id="profile-name">
+Cargando...
+</h1>
+
+<p
+class="hero-headline"
+id="profile-headline">
+Cargando...
+</p>
+
+<div class="hero-buttons">
+
+<a href="#gallery" class="btn-primary">
+Explorar Galería
+</a>
+
+<a href="#about" class="btn-secondary">
+Conocer Más
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll-indicator">
+
+<span></span>
+
+</div>
+
+</section>
+
+<!-- SOBRE MI -->
+
+<section id="about" class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+QUIÉN SOY
+</span>
+
+<h2>
+Tecnología, creatividad y crecimiento constante.
+</h2>
+
+</div>
+
+<div class="about-grid">
+
+<div class="profile-card">
+
+<div class="profile-image-wrapper">
+
+<img
+id="profile-avatar"
+alt="Foto de perfil">
+
+<div
+id="avatar-fallback"
+class="avatar-fallback">
+
+Sin fotografía
+
+</div>
+
+</div>
+
+</div>
+
+<div class="about-content">
+
+<div class="glass-card">
+
+<h3>Presentación</h3>
+
+<p id="profile-about"></p>
+
+</div>
+
+<div class="glass-card">
+
+<h3>Objetivo Profesional</h3>
+
+<p id="profile-focus"></p>
+
+</div>
+
+<div
+class="location-pill"
+id="profile-location">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ESTADISTICAS -->
+
+<section class="stats-section reveal">
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3 id="photos-count">0</h3>
+
+<p>Fotografías</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="highlights-count">0</h3>
+
+<p>Especialidades</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>∞</h3>
+
+<p>Aprendizaje continuo</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ESPECIALIDADES -->
+
+<section
+id="skills"
+class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+ESPECIALIDADES
+</span>
+
+<h2>
+Áreas que fortalecen mi desarrollo.
+</h2>
+
+</div>
+
+<div
+id="highlight-grid"
+class="skills-grid">
+
+</div>
+
+</section>
+
+<!-- EXPERIENCIA -->
+
+<section
+id="experience"
+class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+TRAYECTORIA
+</span>
+
+<h2>
+Mi evolución académica y profesional.
+</h2>
+
+</div>
+
+<div
+id="experience-timeline"
+class="timeline">
+
+<!-- generado por JS -->
+
+</div>
+
+</section>
+
+<!-- PROYECTOS -->
+
+<section
+id="projects"
+class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+PROYECTOS
+</span>
+
+<h2>
+Trabajos y desarrollos realizados.
+</h2>
+
+</div>
+
+<div
+id="projects-grid"
+class="projects-grid">
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section
+id="gallery"
+class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+GALERÍA
+</span>
+
+<h2>
+Momentos capturados con intención.
+</h2>
+
+</div>
+
+<div
+id="gallery-grid"
+class="masonry-gallery">
+
+</div>
+
+</section>
+
+<!-- REDES -->
+
+<section
+id="socials"
+class="section reveal">
+
+<div class="section-header">
+
+<span class="section-tag">
+CONTACTO
+</span>
+
+<h2>
+Conectemos a través de mis redes.
+</h2>
+
+</div>
+
+<div
+id="social-links"
+class="social-grid">
+
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div
+id="lightbox"
+class="lightbox">
+
+<div class="lightbox-content">
+
+<button
+id="close-lightbox"
+class="close-lightbox">
+
+✕
+
+</button>
+
+<img
+id="lightbox-image"
+alt="Fotografía">
+
+<div class="lightbox-info">
+
+<h3 id="lightbox-title"></h3>
+
+<p id="lightbox-location"></p>
+
+<p id="lightbox-description"></p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<h3 id="footer-name">
+Portfolio
+</h3>
+
+<p>
+Desarrollo, análisis y creatividad integrados en una misma visión.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
 </html>
