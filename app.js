@@ -505,19 +505,22 @@ function renderProjects(
           ${project.description || ""}
         </p>
 
-        ${
-          project.url
-            ? `
-            <a
-              href="${project.url}"
-              target="_blank"
-              class="project-btn"
-            >
-              Ver Proyecto
-            </a>
-            `
-            : ""
-        }
+${
+  (project.project_url || project.url)
+    ? `
+    <a
+      href="${
+        project.project_url ||
+        project.url
+      }"
+      target="_blank"
+      class="project-btn"
+    >
+      Ver Proyecto
+    </a>
+    `
+    : ""
+}
 
       </div>
 
